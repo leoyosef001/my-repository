@@ -11,4 +11,5 @@ jobs:
           node-version: '24'
       - run: npm install -g bats
       - run: bats -v
-      - run: echo "event name: ${{ github.event_name }}"
+      - run: |
+        echo "event name: ${{ github.event_name }}"
